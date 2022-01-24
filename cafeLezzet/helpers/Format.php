@@ -4,9 +4,9 @@ class Format{
 
   public function validation($data){
   $data1 = trim($data);
-  $data2 = stripcslashes($data1);
-  $data3 = htmlspecialchars($data2);
-  return $data3; // here i return this $data variable so we can use this.
+  $data2 = stripcslashes($data1);//Ters eğik çizgileri kaldırmak ve bir veritabanından veya bir HTML formundan alınan verileri temizlemek için kullanılır. Ters eğik çizgileri çıkarılmış bir dize döndürür.
+  $data3 = htmlspecialchars($data2);//Özel karakterleri HTML varlıklarına dönüştürür
+  return $data3; 
  }
 public function textShorten($text, $limit = 800){
 	$text1 = $text. "";
